@@ -13,7 +13,7 @@ int main(int argc, char** argv)
             image_scale, image_resize, image_rotate, image_rotate_point,
             image_rotate_point_func, image_Affine, image_bevel, image_clone, 
             image_piece_r, image_projective, image_polynomial;
-    image = cv::imread(path + "/lab2/image.png", 1); 
+    image = cv::imread(path + "/lab2/source/image.png", 1); 
 
 
     // Task 1
@@ -394,9 +394,9 @@ int main(int argc, char** argv)
 
 
     // Task 19
-    cv::Mat topPart = cv::imread(path + "/lab2/top.png");
-    cv::Mat botPart = cv::imread(path + "/lab2/bttm.png");
-    image = cv::imread(path + "/lab2/image_cut.png");
+    cv::Mat topPart = cv::imread(path + "/lab2/source/top.png");
+    cv::Mat botPart = cv::imread(path + "/lab2/source/bttm.png");
+    image = cv::imread(path + "/lab2/source/image_cut.png");
     
     cv::Ptr<cv::Stitcher> stitcher = cv::Stitcher::create(cv::Stitcher::SCANS);
     
