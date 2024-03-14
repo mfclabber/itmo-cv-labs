@@ -4,7 +4,6 @@
 #include <opencv2/opencv.hpp> 
 
 
-
 int main(int argc, char** argv) 
 { 
     // было решено оставить так, потому что библиотеки требовательны к версиям компилятора и ОС
@@ -257,6 +256,161 @@ int main(int argc, char** argv)
     // cv::waitKey(0); 
 
 
+    // Task 15
+    // cv::Mat u = cv::Mat::zeros(image.rows, image.cols, CV_32F);
+    // cv::Mat v = cv::Mat::zeros(image.rows, image.cols, CV_32F);
+
+    // for(int x = 0; x < image.cols; ++x){
+    //     for(int y = 0; y < image.rows; ++y){
+    //         u.at<float>(y, x) = float(x + 20 * sin(2 * M_PI * y / 90));
+    //         v.at<float>(y, x) = float(y);
+    //     }
+    // }
+    // cv::Mat image_sinusoid;
+    // cv::remap(image, image_sinusoid, u, v, cv::INTER_LINEAR);
+
+    // cv::imwrite(path + "/lab2/outputs/image_sinusoid.png", image_sinusoid);
+    // cv::imshow("B", image_sinusoid);
+    // cv::waitKey(0);
+
+
+    // Task 16
+    // cv::Mat x_i, y_i;
+    // std::vector<float> t_x, t_y;
+
+    // for(int i = 0; i < image.cols; ++i)
+    //     t_x.push_back(float(i));
     
+    // for(int i = 0; i < image.rows; ++i)
+    //     t_y.push_back(float(i));
+    
+    // cv::repeat(cv::Mat(t_x).reshape(1, 1), image.rows, 1, x_i);
+    // cv::repeat(cv::Mat(t_y).reshape(1, 1).t(), 1, image.cols, y_i);
+
+    // double x_mid = x_i.cols / 2.0;
+    // double y_mid = x_i.rows / 2.0;
+
+    // x_i -= x_mid;
+    // x_i /= x_mid;
+    // y_i -= y_mid;
+    // y_i /= y_mid;
+
+    // cv::Mat r, theta;
+    // cv::cartToPolar(x_i, y_i, r, theta);
+
+    // double F3 = 0.1, F5 = 0.1;
+    // cv::Mat r3, r5;
+
+    // pow(r, 3, r3); pow(r, 5, r5);
+    // r += r3 * F3; r += r5 * F5;
+
+    // cv::Mat u, v;
+    // cv::polarToCart(r, theta, u, v);
+    // u *= x_mid;
+    // u += x_mid;
+    // v *= y_mid;
+    // v *= y_mid;
+
+    // cv::Mat image_barrel;
+    // cv::remap(image, image_barrel, u, v, cv::INTER_LINEAR);
+
+    // cv::imwrite(path + "/lab2/outputs/image_barrel.png", image_barrel);
+    // cv::imshow("B", image_barrel);
+    // cv::waitKey(0);
+
+
+    // Tasl 17
+    // cv::Mat x_i, y_i;
+    // std::vector<float> t_x, t_y;
+
+    // for(int i = 0; i < image.cols; ++i)
+    //     t_x.push_back(float(i));
+    
+    // for(int i = 0; i < image.rows; ++i)
+    //     t_y.push_back(float(i));
+    
+    // cv::repeat(cv::Mat(t_x).reshape(1, 1), image.rows, 1, x_i);
+    // cv::repeat(cv::Mat(t_y).reshape(1, 1).t(), 1, image.cols, y_i);
+
+    // double x_mid = x_i.cols / 2.0;
+    // double y_mid = x_i.rows / 2.0;
+
+    // x_i -= x_mid;
+    // x_i /= x_mid;
+    // y_i -= y_mid;
+    // y_i /= y_mid;
+
+    // cv::Mat r, theta;
+    // cv::cartToPolar(x_i, y_i, r, theta);
+
+    // double F3 = -0.3;
+    // cv::Mat r3, r5;
+
+    // pow(r, 3, r3); pow(r, 5, r5);
+    // r += r + r3 * F3;
+
+    // cv::Mat u, v;
+    // cv::polarToCart(r, theta, u, v);
+    // u *= x_mid;
+    // u += x_mid;
+    // v *= y_mid;
+    // v *= y_mid;
+
+    // cv::Mat image_barrel;
+    // cv::remap(image, image_barrel, u, v, cv::INTER_LINEAR);
+
+    // cv::imwrite(path + "/lab2/outputs/image_pincushion.png", image_barrel);
+    // cv::imshow("B", image_barrel);
+    // cv::waitKey(0);
+
+
+    // Task 18
+    // cv::Mat topPart = cv::imread(path + "/lab2/1.jpg");
+    // cv::Mat botPart = cv::imread(path + "/lab2/2.jpg");
+
+    // int templ_size = 10;
+    // cv::Mat templ = topPart(cv::Rect(0,topPart.rows - templ_size - 1, 
+    //                                         topPart.cols, templ_size));
+
+    // cv::Mat res;
+    // cv::matchTemplate(botPart, templ, res, cv::TM_CCOEFF);
+
+    // double min_val, max_val;
+    // cv::Point2i min_loc, max_loc;
+    // cv::minMaxLoc(res, &min_val, & max_val, &min_loc, &max_loc);
+
+    // cv::Mat image_res = cv::Mat::zeros(topPart.rows + botPart.rows - 
+    //                     max_loc.y - templ_size, topPart.cols, topPart.type());
+
+    // topPart.copyTo(image_res(cv::Rect(0, 0, topPart.cols, topPart.rows)));
+
+    // botPart(cv::Rect(0, max_loc.y + templ_size, botPart.cols,
+    //                  botPart.rows - max_loc.y - templ_size)).
+    //                  copyTo(image_res(cv::Rect(0, topPart.rows, botPart.cols, botPart.rows - max_loc.y - templ_size)));
+
+    // cv::imwrite(path + "/lab2/outputs/image_glues.png", image_res);
+    // cv::imshow("B", image_res);
+    // cv::waitKey(0);
+
+
+    // Task 19
+    cv::Mat topPart = cv::imread(path + "/lab2/top.png");
+    cv::Mat botPart = cv::imread(path + "/lab2/bttm.png");
+    image = cv::imread(path + "/lab2/image_cut.png");
+    
+    cv::Ptr<cv::Stitcher> stitcher = cv::Stitcher::create(cv::Stitcher::SCANS);
+    
+    std::vector<cv::Mat> imgs;
+    imgs.push_back(botPart);
+    imgs.push_back(topPart);
+
+    cv::Mat image_stitch;
+    cv::Stitcher::Status status = stitcher->stitch(imgs, image_stitch);
+
+    cv::resize(image_stitch, image_stitch, cv::Size(image.cols, image.rows));
+
+    cv::imwrite(path + "/lab2/outputs/image_stitch.png", image_stitch);
+    cv::imshow("B", image_stitch);
+    cv::waitKey(0);
 }
 
