@@ -12,5 +12,11 @@
 \contentsline {subsection}{\numberline {4.1.}Медианная фильтрация}{15}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2.}Адаптивная медианная фильтрация}{17}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3.}Винеровская фильтрация}{19}{subsection.4.3}%
-\contentsline {section}{\numberline {5.}Высокочастотная фильтрация}{21}{section.5}%
-\contentsline {subsection}{\numberline {5.1.}Фильтр Робертса}{21}{subsection.5.1}%
+\contentsline {section}{\numberline {5.}Высокочастотная фильтрация}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1.}Фильтр Робертса}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2.}Фильтр Превитта}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3.}Фильтр Превитта}{25}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4.}Фильтр Лапласа}{27}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5.}Алгоритм Кэнни}{28}{subsection.5.5}%
+\contentsline {section}{\numberline {6.}Выводы}{29}{section.6}%
+\contentsline {section}{\numberline {7.}Ответы на вопросы}{29}{section.7}%
