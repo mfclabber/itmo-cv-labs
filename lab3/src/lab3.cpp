@@ -179,5 +179,43 @@ int main(int argc, char** argv)
 
 
 
+    // GAUSSIAN FILTER
+    // image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1); 
+    // cv::GaussianBlur(image, image_out, cv::Size(5, 5), 0);
+
+    // cv::imwrite(path + "/lab3/outputs/image_quant_filter.png", image_out);
+    // cv::imshow("Image", image_out); 
+    // cv::waitKey(0);
+
+
+
+    // COUNTERGARMONIC AVERAGE FILTER
+    image = cv::imread(path + "/lab3/outputs/image_quant_filter.png", 1); 
+
+    std::pair<int, int> kernel = std::make_pair(2, 2);
+    const int Q = 5;
+
+    image_out = image.clone();
+
+    int radius_c = (kernel.first - 1) / 2; // columns offset
+    int radius_r = (kernel.second - 1) / 2; // rows offset
+    float res = 0;
+
+    for(int c = 0; c < 3; ++c){
+        for (int i = radius_r; i < image.rows - kernel.second - 1; i++) {
+            for (int j = radius_c; j < image.cols - kernel.first - 1; j++) {
+                res = 0;
+                for(int m = 0; m < kernel.first; ++m){
+                    for(int n = 0; n < kernel.second; ++n){
+                        res += (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q + 1)) 
+                                / (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q));
+                    }
+                }
+                image_out.at<cv::Vec3f>(i, j)[c] = res;
+            }
+        }
+    }
     
+    cv::imshow("Image", image_out); 
+    cv::waitKey(0);
 }
