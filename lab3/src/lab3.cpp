@@ -219,6 +219,7 @@ int main(int argc, char **argv)
     // cv::waitKey(0);
 
     // GAUSSIAN FILTER
+
     // image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1);
     // cv::GaussianBlur(image, image_out, cv::Size(5, 5), 0);
 
@@ -226,49 +227,56 @@ int main(int argc, char **argv)
     // cv::imshow("Image", image_out);
     // cv::waitKey(0);
 
+
+
     // COUNTERGARMONIC AVERAGE FILTER
 
-    // image = cv::imread(path + "/lab3/outputs/image_quant_filter.png", 1);
+    // image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1);
 
-    // std::pair<int, int> kernel = std::make_pair(3, 3);
-    // const int Q = -10;
+    // std::pair<int, int> kernel = std::make_pair(2, 2);
+    // const int Q = -1;
 
-    // image_out = image.clone();
-    // std::cout << image.depth();
+    // image_out = image;
+    // std::cout << image.channels();
     
     // int radius_c = (kernel.first - 1) / 2;  // columns offset
     // int radius_r = (kernel.second - 1) / 2; // rows offset
-    // float res = 0;
+    // float res1 = 0, res2 = 0;
 
-    // for (int c = 0; c < 3; ++c)
-    // {
-    //     for (int i = radius_r; i < image.rows - kernel.second - 1; i++)
-    //     {
+
+    // for(int c = 0; c < image.channels(); ++c){
+    //     for (int i = radius_r; i < image.rows - kernel.second - 1; i++){
     //         for (int j = radius_c; j < image.cols - kernel.first - 1; j++)
     //         {
-    //             res = 0;
+    //             res1 = 0; res2 = 0;
+
     //             for (int m = 0; m < kernel.first; ++m)
     //             {
     //                 for (int n = 0; n < kernel.second; ++n)
     //                 {
-    //                     res += (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q + 1)) / (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q));
+    //                     res1 += pow(image.at<cv::Vec3b>(i + m, j + n)[c], Q + 1);
+    //                     res2 += pow(image.at<cv::Vec3b>(i + m, j + n)[c], Q);
     //                 }
     //             }
-    //             image_out.at<cv::Vec3f>(i, j)[c] = res;
+
+    //             image_out.at<cv::Vec3b>(i, j)[c] = res1 / res2;                                                            
     //         }
     //     }
     // }
-    // cv::imwrite(path + "/lab3/outputs/image_quant_countergarmonic_filter_Q10.png", image_out);
+
+    // cv::imwrite(path + "/lab3/addition/image_quant_countergarmonic_filter_Q1.png", image_out);
     // cv::imshow("Image", image_out);
     // cv::waitKey(0);
 
+
+
     // MEDIAN FILTER
 
-    // image = cv::imread(path + "/lab3/outputs/image_gauss_noise.png", 1);
+    // image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1);
 
-    // cv::medianBlur(image, image_out, 3);
+    // cv::medianBlur(image, image_out, 5);
 
-    // cv::imwrite(path + "/lab3/outputs/image_gauss_median_filter_k3.png", image_out);
+    // cv::imwrite(path + "/lab3/addition/image_quant_median_filter_k5.png", image_out);
     // cv::imshow("Image", image_out);
     // cv::waitKey(0);
 
@@ -325,7 +333,7 @@ int main(int argc, char **argv)
     // if(image.depth() == CV_8U)
     //     image_out.convertTo(image_out, CV_8U, 255);
 
-    // cv::imwrite(path + "/lab3/outputs/image_gauss_weighteed_median_filter_k3.png", image_out);
+    // cv::imwrite(path + "/lab3/image_gauss_weighteed_median_filter_k3.png", image_out);
     // cv::imshow("Image", image_out);
     // cv::waitKey(0);
 
@@ -507,10 +515,10 @@ int main(int argc, char **argv)
 
     //CANNY OPERATOR
 
-    image = cv::imread(path + "/lab3/source/SDC_Yandex.png", 1);
-    cv::Canny(image, image_out, 50, 200);
+    // image = cv::imread(path + "/lab3/source/SDC_Yandex.png", 1);
+    // cv::Canny(image, image_out, 50, 200);
 
-    cv::imwrite(path + "/lab3/outputs/canny_operator.png", image_out);
-    cv::imshow("Image", image_out);
-    cv::waitKey(0);
+    // cv::imwrite(path + "/lab3/outputs/canny_operator.png", image_out);
+    // cv::imshow("Image", image_out);
+    // cv::waitKey(0);
 }
