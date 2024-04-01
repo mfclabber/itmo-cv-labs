@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1711283098.47752 "c:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab3/report/main.tex" "main.pdf" "main" 1711283101.93195 0
+["pdflatex"] 1711990429.06041 "c:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab3/report/main.tex" "main.pdf" "main" 1711990435.32715 0
   "../addition/image_gauss_countergarmonic_filter_Q5.png" 1711273826 1313422 6bf8846df72a9c43fd6220fe862a7bbd ""
   "../addition/image_gauss_median_filter_k3.png" 1711273826 1116951 6834e86b6acb9173577200405df987d7 ""
   "../addition/image_gauss_median_filter_k5.png" 1711273826 970720 9351e86a5215c5f0224e22c08f43b9b1 ""
@@ -158,14 +158,14 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709805126 123480 825a954d3b18dcd8929c53145c8c721a ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709769439 6812425 fcc01dddfdaf5bee67974ef904791b52 ""
   "c:/texlive/2023/texmf.cnf" 1709769390 713 e69b156964470283e0530f5060668171 ""
-  "content.aux" 1711283101 21592 9928948961d1bd065014352523844564 "pdflatex"
-  "content.tex" 1711283097 47225 316b7e0d08860ec7a54369eb601fd373 ""
-  "main.aux" 1711283101 312 25c6ef6a47ada3ea75027522872bb165 "pdflatex"
-  "main.out" 1711283101 4263 0d87300cb7fbf0bf0376288b92b84eae "pdflatex"
+  "content.aux" 1711990434 21592 9928948961d1bd065014352523844564 "pdflatex"
+  "content.tex" 1711990406 47225 316b7e0d08860ec7a54369eb601fd373 ""
+  "main.aux" 1711990434 312 25c6ef6a47ada3ea75027522872bb165 "pdflatex"
+  "main.out" 1711990434 4263 0d87300cb7fbf0bf0376288b92b84eae "pdflatex"
   "main.tex" 1711278184 4041 97112fd23bc125ef03c32c6f783e536e ""
-  "main.toc" 1711283101 2144 e8d1173ac1756818ab85249b4758a509 "pdflatex"
+  "main.toc" 1711990434 2144 e8d1173ac1756818ab85249b4758a509 "pdflatex"
   "media/ITMO_logo.png" 1710453878 13873 06bd6ab077b24bd26b1aacd5f3184ad7 ""
-  "unformal_title.aux" 1711283099 666 3fa013f395c31f08bc93fe59ce83fda4 "pdflatex"
+  "unformal_title.aux" 1711990430 666 3fa013f395c31f08bc93fe59ce83fda4 "pdflatex"
   "unformal_title.tex" 1710462659 845 e6fa839b7278a8218cc8112ad63ac723 ""
   (generated)
   "content.aux"
