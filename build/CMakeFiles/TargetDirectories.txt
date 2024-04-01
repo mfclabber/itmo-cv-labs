@@ -1,0 +1,3 @@
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/lab2.dir
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.7)  17 MAR 2024 01:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.7)  24 MAR 2024 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,28 +713,79 @@ LaTeX Warning: Label `fig:impulse_image' multiply defined.
 LaTeX Warning: Label `eq:complex_func' multiply defined.
 
 
-LaTeX Warning: Label `fig:impulse_image' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
-LaTeX Warning: Label `fig:impulse_image' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
 LaTeX Warning: Label `eq:complex_func' multiply defined.
 
 
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
 LaTeX Warning: Label `eq:complex_func' multiply defined.
 
 
-LaTeX Warning: Label `fig:stitch_images' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
-LaTeX Warning: Label `fig:stitch_images' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
-LaTeX Warning: Label `fig:stitch_images' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
-LaTeX Warning: Label `fig:stitch_images' multiply defined.
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
+
+
+LaTeX Warning: Label `fig:stich_images' multiply defined.
 
 
 LaTeX Warning: Label `fig:stitch_images' multiply defined.
@@ -916,95 +967,272 @@ File: ../outputs/image_quant_noise.png Graphic file (type png)
 Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 298.
 (pdftex.def)             Requested size: 500.76852pt x 365.12337pt.
  [10 <../outputs/image_quant_noise.png (PNG copy)>] [11]
-<../outputs/image_quant_countergarmonic_filter_Q10.png, id=332, 841.1425pt x 613.29124pt>
-File: ../outputs/image_quant_countergarmonic_filter_Q10.png Graphic file (type png)
-<use ../outputs/image_quant_countergarmonic_filter_Q10.png>
-Package pdftex.def Info: ../outputs/image_quant_countergarmonic_filter_Q10.png  used on input line 360.
-(pdftex.def)             Requested size: 500.76852pt x 365.12337pt.
-<../outputs/image_quant_countergarmonic_filter.png, id=333, 841.1425pt x 613.29124pt>
-File: ../outputs/image_quant_countergarmonic_filter.png Graphic file (type png)
-<use ../outputs/image_quant_countergarmonic_filter.png>
-Package pdftex.def Info: ../outputs/image_quant_countergarmonic_filter.png  used on input line 366.
-(pdftex.def)             Requested size: 500.76852pt x 365.12337pt.
- [12 <../outputs/image_quant_countergarmonic_filter_Q10.png (PNG copy)>] [13 <../outputs/image_quant_countergarmonic_filter.png (PNG copy)>]
-File: ../outputs/image_gauss_noise.png Graphic file (type png)
-<use ../outputs/image_gauss_noise.png>
-Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 401.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
-<../outputs/image_gaussian_filter.png, id=349, 841.1425pt x 613.29124pt>
-File: ../outputs/image_gaussian_filter.png Graphic file (type png)
-<use ../outputs/image_gaussian_filter.png>
-Package pdftex.def Info: ../outputs/image_gaussian_filter.png  used on input line 402.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
- [14 <../outputs/image_gaussian_filter.png (PNG copy)>] [15]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 367.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_impulse_countergarmonic_filter_Q1.png, id=332, 841.1425pt x 613.29124pt>
+File: ../addition/image_impulse_countergarmonic_filter_Q1.png Graphic file (type png)
+<use ../addition/image_impulse_countergarmonic_filter_Q1.png>
+Package pdftex.def Info: ../addition/image_impulse_countergarmonic_filter_Q1.png  used on input line 368.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [12 <../addition/image_impulse_countergarmonic_filter_Q1.png (PNG copy)>]
 File: ../outputs/image_mltp_noise.png Graphic file (type png)
 <use ../outputs/image_mltp_noise.png>
-Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 435.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
-<../outputs/image_mltp_median_filter_k3.png, id=367, 841.1425pt x 613.29124pt>
-File: ../outputs/image_mltp_median_filter_k3.png Graphic file (type png)
-<use ../outputs/image_mltp_median_filter_k3.png>
-Package pdftex.def Info: ../outputs/image_mltp_median_filter_k3.png  used on input line 436.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
- [16 <../outputs/image_mltp_median_filter_k3.png (PNG copy)>] [17]
-<../outputs/image_impulse_filter.png, id=417, 841.1425pt x 613.29124pt>
-File: ../outputs/image_impulse_filter.png Graphic file (type png)
-<use ../outputs/image_impulse_filter.png>
-Package pdftex.def Info: ../outputs/image_impulse_filter.png  used on input line 500.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
-<../outputs/image_quant_filter.png, id=418, 841.1425pt x 613.29124pt>
-File: ../outputs/image_quant_filter.png Graphic file (type png)
-<use ../outputs/image_quant_filter.png>
-Package pdftex.def Info: ../outputs/image_quant_filter.png  used on input line 501.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
- [18 <../outputs/image_impulse_filter.png (PNG copy)> <../outputs/image_quant_filter.png (PNG copy)>] [19] [20]
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 377.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_mltp_countergarmonic_filter_Q3.png, id=348, 841.1425pt x 613.29124pt>
+File: ../addition/image_mltp_countergarmonic_filter_Q3.png Graphic file (type png)
+<use ../addition/image_mltp_countergarmonic_filter_Q3.png>
+Package pdftex.def Info: ../addition/image_mltp_countergarmonic_filter_Q3.png  used on input line 378.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
 File: ../outputs/image_gauss_noise.png Graphic file (type png)
 <use ../outputs/image_gauss_noise.png>
-Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 584.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 387.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_gauss_countergarmonic_filter_Q5.png, id=349, 841.1425pt x 613.29124pt>
+File: ../addition/image_gauss_countergarmonic_filter_Q5.png Graphic file (type png)
+<use ../addition/image_gauss_countergarmonic_filter_Q5.png>
+Package pdftex.def Info: ../addition/image_gauss_countergarmonic_filter_Q5.png  used on input line 388.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [13 <../addition/image_mltp_countergarmonic_filter_Q3.png (PNG copy)>]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 398.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_quant_countergarmonic_filter_Q1.png, id=355, 841.1425pt x 613.29124pt>
+File: ../addition/image_quant_countergarmonic_filter_Q1.png Graphic file (type png)
+<use ../addition/image_quant_countergarmonic_filter_Q1.png>
+Package pdftex.def Info: ../addition/image_quant_countergarmonic_filter_Q1.png  used on input line 399.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [14 <../addition/image_gauss_countergarmonic_filter_Q5.png (PNG copy)>] [15 <../addition/image_quant_countergarmonic_filter_Q1.png (PNG copy)>]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 437.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../outputs/image_impulse_filter.png, id=367, 841.1425pt x 613.29124pt>
+File: ../outputs/image_impulse_filter.png Graphic file (type png)
+<use ../outputs/image_impulse_filter.png>
+Package pdftex.def Info: ../outputs/image_impulse_filter.png  used on input line 438.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../outputs/image_mltp_noise.png Graphic file (type png)
+<use ../outputs/image_mltp_noise.png>
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 447.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_mltp_median_filter_k3.png, id=368, 841.1425pt x 613.29124pt>
+File: ../addition/image_mltp_median_filter_k3.png Graphic file (type png)
+<use ../addition/image_mltp_median_filter_k3.png>
+Package pdftex.def Info: ../addition/image_mltp_median_filter_k3.png  used on input line 448.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [16 <../outputs/image_impulse_filter.png (PNG copy)>]
+File: ../outputs/image_gauss_noise.png Graphic file (type png)
+<use ../outputs/image_gauss_noise.png>
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 458.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_gauss_median_filter_k3.png, id=377, 841.1425pt x 613.29124pt>
+File: ../addition/image_gauss_median_filter_k3.png Graphic file (type png)
+<use ../addition/image_gauss_median_filter_k3.png>
+Package pdftex.def Info: ../addition/image_gauss_median_filter_k3.png  used on input line 459.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [17 <../addition/image_mltp_median_filter_k3.png (PNG copy)>]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 469.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_quant_median_filter_k5.png, id=383, 841.1425pt x 613.29124pt>
+File: ../addition/image_quant_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_quant_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_quant_median_filter_k5.png  used on input line 470.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [18 <../addition/image_gauss_median_filter_k3.png (PNG copy)>] [19 <../addition/image_quant_median_filter_k5.png (PNG copy)>] [20]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 507.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_impulse_median_filter_k3.png, id=405, 841.1425pt x 613.29124pt>
+File: ../addition/image_impulse_median_filter_k3.png Graphic file (type png)
+<use ../addition/image_impulse_median_filter_k3.png>
+Package pdftex.def Info: ../addition/image_impulse_median_filter_k3.png  used on input line 508.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../outputs/image_mltp_noise.png Graphic file (type png)
+<use ../outputs/image_mltp_noise.png>
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 517.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../addition/image_mltp_median_filter_k3.png Graphic file (type png)
+<use ../addition/image_mltp_median_filter_k3.png>
+Package pdftex.def Info: ../addition/image_mltp_median_filter_k3.png  used on input line 518.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [21 <../addition/image_impulse_median_filter_k3.png (PNG copy)>]
+File: ../outputs/image_gauss_noise.png Graphic file (type png)
+<use ../outputs/image_gauss_noise.png>
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 528.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../addition/image_gauss_median_filter_k3.png Graphic file (type png)
+<use ../addition/image_gauss_median_filter_k3.png>
+Package pdftex.def Info: ../addition/image_gauss_median_filter_k3.png  used on input line 529.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [22]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 539.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../addition/image_quant_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_quant_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_quant_median_filter_k5.png  used on input line 540.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [23]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 551.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_impulse_median_filter_k5.png, id=421, 841.1425pt x 613.29124pt>
+File: ../addition/image_impulse_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_impulse_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_impulse_median_filter_k5.png  used on input line 552.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [24]
+File: ../outputs/image_mltp_noise.png Graphic file (type png)
+<use ../outputs/image_mltp_noise.png>
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 562.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_mltp_median_filter_k5.png, id=428, 841.1425pt x 613.29124pt>
+File: ../addition/image_mltp_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_mltp_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_mltp_median_filter_k5.png  used on input line 563.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [25 <../addition/image_impulse_median_filter_k5.png (PNG copy)>]
+File: ../outputs/image_gauss_noise.png Graphic file (type png)
+<use ../outputs/image_gauss_noise.png>
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 573.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_gauss_median_filter_k5.png, id=434, 841.1425pt x 613.29124pt>
+File: ../addition/image_gauss_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_gauss_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_gauss_median_filter_k5.png  used on input line 574.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [26 <../addition/image_mltp_median_filter_k5.png (PNG copy)>]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 584.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../addition/image_quant_median_filter_k5.png Graphic file (type png)
+<use ../addition/image_quant_median_filter_k5.png>
+Package pdftex.def Info: ../addition/image_quant_median_filter_k5.png  used on input line 585.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [27 <../addition/image_gauss_median_filter_k5.png (PNG copy)>] [28]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 651.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../outputs/image_quant_filter.png, id=455, 841.1425pt x 613.29124pt>
 File: ../outputs/image_quant_filter.png Graphic file (type png)
 <use ../outputs/image_quant_filter.png>
-Package pdftex.def Info: ../outputs/image_quant_filter.png  used on input line 585.
-(pdftex.def)             Requested size: 350.53644pt x 255.57793pt.
- [21]
-<../source/SDC_Yandex.png, id=508, 1174.3875pt x 782.17218pt>
+Package pdftex.def Info: ../outputs/image_quant_filter.png  used on input line 652.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [29]
+File: ../outputs/image_mltp_noise.png Graphic file (type png)
+<use ../outputs/image_mltp_noise.png>
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 662.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../outputs/image_quant_filter.png Graphic file (type png)
+<use ../outputs/image_quant_filter.png>
+Package pdftex.def Info: ../outputs/image_quant_filter.png  used on input line 663.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [30 <../outputs/image_quant_filter.png (PNG copy)>]
+File: ../outputs/image_gauss_noise.png Graphic file (type png)
+<use ../outputs/image_gauss_noise.png>
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 673.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../addition/image_gauss_quant_filter_k3.png, id=505, 841.1425pt x 613.29124pt>
+File: ../addition/image_gauss_quant_filter_k3.png Graphic file (type png)
+<use ../addition/image_gauss_quant_filter_k3.png>
+Package pdftex.def Info: ../addition/image_gauss_quant_filter_k3.png  used on input line 674.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [31]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 684.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../source/image.png Graphic file (type png)
+<use ../source/image.png>
+Package pdftex.def Info: ../source/image.png  used on input line 685.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [32 <../addition/image_gauss_quant_filter_k3.png (PNG copy)>] [33] [34]
+File: ../outputs/image_impulse_noise.png Graphic file (type png)
+<use ../outputs/image_impulse_noise.png>
+Package pdftex.def Info: ../outputs/image_impulse_noise.png  used on input line 768.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+<../outputs/image_gaussian_filter.png, id=588, 841.1425pt x 613.29124pt>
+File: ../outputs/image_gaussian_filter.png Graphic file (type png)
+<use ../outputs/image_gaussian_filter.png>
+Package pdftex.def Info: ../outputs/image_gaussian_filter.png  used on input line 769.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [35 <../outputs/image_gaussian_filter.png (PNG copy)>]
+File: ../outputs/image_mltp_noise.png Graphic file (type png)
+<use ../outputs/image_mltp_noise.png>
+Package pdftex.def Info: ../outputs/image_mltp_noise.png  used on input line 779.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../outputs/image_quant_filter.png Graphic file (type png)
+<use ../outputs/image_quant_filter.png>
+Package pdftex.def Info: ../outputs/image_quant_filter.png  used on input line 780.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [36]
+File: ../outputs/image_gauss_noise.png Graphic file (type png)
+<use ../outputs/image_gauss_noise.png>
+Package pdftex.def Info: ../outputs/image_gauss_noise.png  used on input line 790.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../addition/image_gauss_quant_filter_k3.png Graphic file (type png)
+<use ../addition/image_gauss_quant_filter_k3.png>
+Package pdftex.def Info: ../addition/image_gauss_quant_filter_k3.png  used on input line 791.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [37]
+File: ../outputs/image_quant_noise.png Graphic file (type png)
+<use ../outputs/image_quant_noise.png>
+Package pdftex.def Info: ../outputs/image_quant_noise.png  used on input line 801.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+File: ../source/image.png Graphic file (type png)
+<use ../source/image.png>
+Package pdftex.def Info: ../source/image.png  used on input line 802.
+(pdftex.def)             Requested size: 300.46416pt x 219.07214pt.
+ [38]
+<../source/SDC_Yandex.png, id=612, 1174.3875pt x 782.17218pt>
 File: ../source/SDC_Yandex.png Graphic file (type png)
 <use ../source/SDC_Yandex.png>
-Package pdftex.def Info: ../source/SDC_Yandex.png  used on input line 596.
+Package pdftex.def Info: ../source/SDC_Yandex.png  used on input line 813.
 (pdftex.def)             Requested size: 500.76852pt x 333.52277pt.
- [22 <../source/SDC_Yandex.png>]
-<../outputs/roberts_operator.png, id=524, 1565.85pt x 1042.89626pt>
+ [39 <../source/SDC_Yandex.png>]
+<../outputs/roberts_operator.png, id=629, 1565.85pt x 1042.89626pt>
 File: ../outputs/roberts_operator.png Graphic file (type png)
 <use ../outputs/roberts_operator.png>
-Package pdftex.def Info: ../outputs/roberts_operator.png  used on input line 637.
+Package pdftex.def Info: ../outputs/roberts_operator.png  used on input line 854.
 (pdftex.def)             Requested size: 500.76852pt x 333.51083pt.
- [23 <../outputs/roberts_operator.png (PNG copy)>]
-<../outputs/previt_operator.png, id=535, 1565.85pt x 1042.89626pt>
+ [40 <../outputs/roberts_operator.png (PNG copy)>]
+<../outputs/previt_operator.png, id=640, 1565.85pt x 1042.89626pt>
 File: ../outputs/previt_operator.png Graphic file (type png)
 <use ../outputs/previt_operator.png>
-Package pdftex.def Info: ../outputs/previt_operator.png  used on input line 680.
+Package pdftex.def Info: ../outputs/previt_operator.png  used on input line 897.
 (pdftex.def)             Requested size: 500.76852pt x 333.51083pt.
- [24] [25 <../outputs/previt_operator.png (PNG copy)>]
-<../outputs/sobel_operator.png, id=575, 1565.85pt x 1042.89626pt>
+ [41] [42 <../outputs/previt_operator.png (PNG copy)>]
+<../outputs/sobel_operator.png, id=680, 1565.85pt x 1042.89626pt>
 File: ../outputs/sobel_operator.png Graphic file (type png)
 <use ../outputs/sobel_operator.png>
-Package pdftex.def Info: ../outputs/sobel_operator.png  used on input line 723.
+Package pdftex.def Info: ../outputs/sobel_operator.png  used on input line 940.
 (pdftex.def)             Requested size: 500.76852pt x 333.51083pt.
- [26 <../outputs/sobel_operator.png (PNG copy)>]
-<../outputs/laplas_operator.png, id=582, 1565.85pt x 1042.89626pt>
+ [43 <../outputs/sobel_operator.png (PNG copy)>]
+<../outputs/laplas_operator.png, id=687, 1565.85pt x 1042.89626pt>
 File: ../outputs/laplas_operator.png Graphic file (type png)
 <use ../outputs/laplas_operator.png>
-Package pdftex.def Info: ../outputs/laplas_operator.png  used on input line 762.
+Package pdftex.def Info: ../outputs/laplas_operator.png  used on input line 979.
 (pdftex.def)             Requested size: 500.76852pt x 333.51083pt.
- [27]
-<../outputs/canny_operator.png, id=603, 1565.85pt x 1042.89626pt>
+ [44]
+<../outputs/canny_operator.png, id=707, 1565.85pt x 1042.89626pt>
 File: ../outputs/canny_operator.png Graphic file (type png)
 <use ../outputs/canny_operator.png>
-Package pdftex.def Info: ../outputs/canny_operator.png  used on input line 783.
+Package pdftex.def Info: ../outputs/canny_operator.png  used on input line 1000.
 (pdftex.def)             Requested size: 500.76852pt x 333.51083pt.
- [28 <../outputs/laplas_operator.png (PNG copy)>]
+ [45 <../outputs/laplas_operator.png (PNG copy)>]
 \c@question=\count308
- [29 <../outputs/canny_operator.png (PNG copy)>]) [30] (./main.aux (./unformal_title.aux) (./content.aux))
+ [46 <../outputs/canny_operator.png (PNG copy)>]) [47] (./main.aux (./unformal_title.aux) (./content.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1017,18 +1245,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0D87300CB7FBF0BF0376288B92B84EAE;4263.
  ) 
 Here is how much of TeX's memory you used:
- 15491 strings out of 476076
- 236015 string characters out of 5793329
- 2301190 words of memory out of 5000000
- 36974 multiletter control sequences out of 15000+600000
+ 15604 strings out of 476076
+ 239874 string characters out of 5793329
+ 2426190 words of memory out of 5000000
+ 37046 multiletter control sequences out of 15000+600000
  572625 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,122p,1269b,2149s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,122p,1269b,2153s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1095.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/laxc1440.600pk><c:/texlive/2023/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on main.pdf (31 pages, 23669259 bytes).
+Output written on main.pdf (48 pages, 31393699 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 697 compressed objects within 7 object streams
- 393 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1187 PDF objects out of 1200 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 434 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 

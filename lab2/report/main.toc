@@ -1,0 +1,19 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1.}Теоретическая часть}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1.}Матрица преобразования в однородной системе координат}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2.}Линейные преобразования}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1.}Сдвиг изображения}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2.}Отражение изображения}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3.}Однородное масштабирование изображения}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4.}Поворот изображения}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5.}Аффинное отображение}{12}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6.}Скос изображения}{14}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7.}Кусочно-линейное преобразование}{15}{subsection.2.7}%
+\contentsline {section}{\numberline {3.}Нелинейные преобразования}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1.}Проекционное отображение}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2.}Полиномиальное преобразование}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3.}Синусоидальное искажение}{19}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4.}Коррекция дисторсии}{20}{subsection.3.4}%
+\contentsline {section}{\numberline {4.}Сшивка изображений}{23}{section.4}%
+\contentsline {section}{\numberline {5.}Выводы}{26}{section.5}%
+\contentsline {section}{\numberline {6.}Ответы на вопросы}{27}{section.6}%
