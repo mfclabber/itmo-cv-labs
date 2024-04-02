@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mfclabber/itmo-cv-labs/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/CV_LW4.dir/src/lab4.cpp.o -c /home/mfclabber/itmo-cv-labs/lab4/src/lab4.cpp",
+  "file": "/home/mfclabber/itmo-cv-labs/lab4/src/lab4.cpp"
+}
+]
