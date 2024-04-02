@@ -1,6 +1,7 @@
 {
     "configurations": [
         {
+<<<<<<< HEAD
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
@@ -12,6 +13,26 @@
             "cppStandard": "c++20",
             "intelliSenseMode": "linux-clang-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
+=======
+            "name": "Win32",
+            // "includePath": [
+            //     "${workspaceFolder}/**"
+            // ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\Dmitriy Novichkov\\Desktop\\opencv\build\\include"
+            ],
+            "windowsSdkVersion": "10.0.20348.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+>>>>>>> a91d72472274076d5440fa379d412a4950ece63a
         }
     ],
     "version": 4

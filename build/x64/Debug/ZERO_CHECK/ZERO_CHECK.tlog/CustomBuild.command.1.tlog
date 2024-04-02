@@ -1,0 +1,10 @@
+^C:\USERS\DMITRIY NOVICHKOV\DESKTOP\COMPUTER VISION LABS\BUILD\CMAKEFILES\0E2BF9ABCA33F17682C209CF716B028D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab1" "-BC:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/lab2.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

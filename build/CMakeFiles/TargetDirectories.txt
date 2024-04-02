@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /home/mfclabber/itmo-cv-labs/build/CMakeFiles/rebuild_cache.dir
 /home/mfclabber/itmo-cv-labs/build/CMakeFiles/edit_cache.dir
 /home/mfclabber/itmo-cv-labs/build/CMakeFiles/CV_LW4.dir
+=======
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/lab2.dir
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/build/CMakeFiles/ZERO_CHECK.dir
+>>>>>>> a91d72472274076d5440fa379d412a4950ece63a

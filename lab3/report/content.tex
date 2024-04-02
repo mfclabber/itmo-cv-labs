@@ -322,53 +322,89 @@ if(image.depth() == CV_8U)
 Какой-то brutforce получился... Можно оптимизровать с помощью интегральных \href{https://en.wikipedia.org/wiki/Summed-area_table}{выражений} или же посмотреть более простые \href{https://github.com/BBuf/Image-processing-algorithm}{оптимизации}
 
 \begin{lstlisting}[style=cpp_white, caption={Исходный код для контргармонического усредняющего фильтра}]
-image = cv::imread(path + "/lab3/outputs/image_quant_filter.png", 1);
+image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1);
 
-std::pair<int, int> kernel = std::make_pair(3, 3);
-const int Q = -10;
+std::pair<int, int> kernel = std::make_pair(2, 2);
+const int Q = -1;
 
-image_out = image.clone();
-std::cout << image.depth();
+image_out = image;
+std::cout << image.channels();
 
 int radius_c = (kernel.first - 1) / 2;  // columns offset
 int radius_r = (kernel.second - 1) / 2; // rows offset
-float res = 0;
+float res1 = 0, res2 = 0;
 
-for (int c = 0; c < 3; ++c)
-{
-    for (int i = radius_r; i < image.rows - kernel.second - 1; i++)
-    {
+
+for(int c = 0; c < image.channels(); ++c){
+    for (int i = radius_r; i < image.rows - kernel.second - 1; i++){
         for (int j = radius_c; j < image.cols - kernel.first - 1; j++)
         {
-            res = 0;
+            res1 = 0; res2 = 0;
+
             for (int m = 0; m < kernel.first; ++m)
             {
                 for (int n = 0; n < kernel.second; ++n)
                 {
-                    res += (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q + 1)) / (pow(image.at<cv::Vec3f>(i + m, j + n)[c], Q));
+                    res1 += pow(image.at<cv::Vec3b>(i + m, j + n)[c], Q + 1);
+                    res2 += pow(image.at<cv::Vec3b>(i + m, j + n)[c], Q);
                 }
             }
-            image_out.at<cv::Vec3f>(i, j)[c] = res;
+
+            image_out.at<cv::Vec3b>(i, j)[c] = res1 / res2;                                                            
         }
     }
 }
+
+cv::imwrite(path + "/lab3/addition/image_quant_countergarmonic_filter_Q1.png", image_out);
+cv::imshow("Image", image_out);
+cv::waitKey(0);
 \end{lstlisting}
 
-Применим к изображению с импульсивным шумом фильтрацию:
+Применим к изображению с импульссивным шумом контргармонический усредняющий фильтр с ядром 2*2:
 
-\begin{figure}[ht]
-    \includegraphics[width=\textwidth]{../outputs/image_quant_countergarmonic_filter_Q10.png}
-    \caption{Изображение после применения контргармонического усредняющего фильтра с Q = -10}
-    \label{fig:impulse_image}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_impulse_countergarmonic_filter_Q1.png}
+    \caption{Изображение с импульсивным шумом до и после применения контргармонического усредняющего фильтра с Q = 1}
+    \label{fig:stich_images}
 \end{figure}
 
-\begin{figure}[ht]
-    \includegraphics[width=\textwidth]{../outputs/image_quant_countergarmonic_filter.png}
-    \caption{Изображение после применения контргармонического усредняющего фильтра с Q = 5}
-    \label{fig:impulse_image}
+Применим к изображению с мультипликативным шумом контргармонический усредняющий фильтр с ядром 2*2:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_mltp_countergarmonic_filter_Q3.png}
+    \caption{Изображение с мультипликативным шумом до и после применения контргармонического усредняющего фильтра с Q = 3}
+    \label{fig:stich_images}
+\end{figure}
+
+Применим к изображениям с гауссовским шумом контргармонический усредняющий фильтр с ядром 2*2:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_countergarmonic_filter_Q5.png}
+    \caption{Изображение с гауссовским шумом до и после применения контргармонического усредняющего фильтра с Q = 5}
+    \label{fig:stich_images}
 \end{figure}
 
 \pagebreak
+Применим к изображениям с шумом квантизации контргармонический усредняющий фильтр с ядром 2*2:
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_quant_countergarmonic_filter_Q1.png}
+    \caption{Изображение с шумом квантизации до и после применения контргармонического усредняющего фильтра с Q = 1}
+    \label{fig:stich_images}
+\end{figure}
+
+
+\pagebreak
+
+
 
 \subsection{Фильтр Гаусса}
 
@@ -389,20 +425,54 @@ for (int c = 0; c < 3; ++c)
 белых и черных точек невозможно. При $Q$ = 0 фильтр превращается в арифметический, 
 а при $Q$ = -1 — в гармонический.
 
-\pagebreak
-
 \begin{lstlisting}[style=cpp_white, caption={Исходный код фильра Гаусса}]
 image = cv::imread(path + "/lab3/outputs/image_quant_noise.png", 1);
 cv::GaussianBlur(image, image_out, cv::Size(5, 5), 0);
 \end{lstlisting}
 
+Применим к изображению с импульссивным шумом фильтр Гаусса с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_filter.png}
+    \caption{Изображение с импульсивным шумом до и после применения фильтра Гаусса}
+    \label{fig:stich_images}
+\end{figure}
+
+Применим к изображению с мультипликативным шумом фильтр Гаусса с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_mltp_median_filter_k3.png}
+    \caption{Изображение с мультипликативным шумом до и после применения фильтра Гаусса}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с гауссовским шумом фильтр Гаусса с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_median_filter_k3.png}
+    \caption{Изображение с гауссовским шумом до и после применения фильтра Гаусса}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с шумом квантизации фильтр Гаусса с ядром 3*3:
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{../outputs/image_gauss_noise.png}
-    \includegraphics[width=0.7\textwidth]{../outputs/image_gaussian_filter.png}
-    \caption{Изображения для до и после применения фильтра Гаусса (сверху вниз)}
-    \label{fig:stitch_images}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_quant_median_filter_k5.png}
+    \caption{Изображение с шумом квантизации до и после применения фильтра Гаусса}
+    \label{fig:stich_images}
 \end{figure}
+
+
 
 \pagebreak
 
@@ -430,12 +500,91 @@ cv::medianBlur(image, image_out, 3);
 \end{lstlisting}
 \pagebreak
 
+Применим к изображению с импульссивным шумом медианный фильтр с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_impulse_median_filter_k3.png}
+    \caption{Изображение с импульсивным шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+Применим к изображению с мультипликативным шумом медианный фильтр с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_mltp_median_filter_k3.png}
+    \caption{Изображение с мультипликативным шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с гауссовским шумом медианный фильтр с ядром 3*3:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_median_filter_k3.png}
+    \caption{Изображение с гауссовским шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с шумом квантизации медианный фильтр с ядром 3*3:
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{../outputs/image_mltp_noise.png}
-    \includegraphics[width=0.7\textwidth]{../outputs/image_mltp_median_filter_k3.png}
-    \caption{Изображения для до и после применения медианного фильтра с kernel = 3}
-    \label{fig:stitch_images}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_quant_median_filter_k5.png}
+    \caption{Изображение с шумом квантизации до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+
+Применим к изображению с импульссивным шумом медианный фильтр с ядром 5*5:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_impulse_median_filter_k5.png}
+    \caption{Изображение с импульсивным шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображению с мультипликативным шумом медианный фильтр с ядром 5*5:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_mltp_median_filter_k5.png}
+    \caption{Изображение с мультипликативным шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с гауссовским шумом медианный фильтр с ядром 5*5:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_median_filter_k5.png}
+    \caption{Изображение с гауссовским шумом до и после применения медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с шумом квантизации медианный фильтр с ядром 5*5:
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_quant_median_filter_k5.png}
+    \caption{Изображение с шумом квантизации до и после применения медианного фильтра}
+    \label{fig:stich_images}
 \end{figure}
 
 \pagebreak
@@ -495,12 +644,47 @@ cv::Mat amf_work(cv::Mat src){
 }
 \end{lstlisting}
 
+Применим к изображению с импульссивным шумом адаптивную медианную фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_filter.png}
+    \caption{Изображение с импульсивным шумом до и после применения адаптивного медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображению с мультипликативным шумом адаптивную медианную фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_filter.png}
+    \caption{Изображение с мультипликативным шумом до и после применения адаптивного медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с гауссовским шумом адаптивную медианную фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_quant_filter_k3.png}
+    \caption{Изображение с гауссовским шумом до и после применения адаптивного медианного фильтра}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с шумом квантизации адаптивную медианную фильтрацию:
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{../outputs/image_impulse_filter.png}
-    \includegraphics[width=0.7\textwidth]{../outputs/image_quant_filter.png}
-    \caption{Изображения для до и после применения адаптивного медианного фильтра}
-    \label{fig:stitch_images}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../source/image.png}
+    \caption{Изображение с шумом квантизации до и после применения адаптивного медианного фильтра}
+    \label{fig:stich_images}
 \end{figure}
 
 \pagebreak
@@ -577,14 +761,47 @@ for(int k = 0; k < bgr_planes.size(); k++){
 cv::merge(bgr_planes, image_out);
 \end{lstlisting}
 
+Применим к изображению с импульссивным шумом Винеровскую фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_impulse_noise.png}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gaussian_filter.png}
+    \caption{Изображение с импульсивным шумом до и после применения Винеровской фильтрации}
+    \label{fig:stich_images}
+\end{figure}
+
 \pagebreak
+Применим к изображению с мультипликативным шумом Винеровскую фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_mltp_noise.png}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_filter.png}
+    \caption{Изображение с мультипликативным шумом до и после применения Винеровской фильтрации}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с гауссовским шумом Винеровскую фильтрацию:
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../outputs/image_gauss_noise.png}
+    \includegraphics[width=0.6\textwidth]{../addition/image_gauss_quant_filter_k3.png}
+    \caption{Изображение с гауссовским шумом до и после применения Винеровской фильтрации}
+    \label{fig:stich_images}
+\end{figure}
+
+\pagebreak
+Применим к изображениям с шумом квантизации Винеровскую фильтрацию:
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.7\textwidth]{../outputs/image_gauss_noise.png}
-    \includegraphics[width=0.7\textwidth]{../outputs/image_quant_filter.png}
-    \caption{Изображения для до и после применения Винеровского фильтра}
-    \label{fig:stitch_images}
+    \includegraphics[width=0.6\textwidth]{../outputs/image_quant_noise.png}
+    \includegraphics[width=0.6\textwidth]{../source/image.png}
+    \caption{Изображение с шумом квантизации до и после применения Винеровской фильтрации}
+    \label{fig:stich_images}
 \end{figure}
 
 \pagebreak

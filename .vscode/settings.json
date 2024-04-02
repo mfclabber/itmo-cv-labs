@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "cmake.sourceDirectory": "/home/mfclabber/itmo-cv-labs/lab4",
     "files.associations": {
@@ -70,4 +71,9 @@
         "typeinfo": "cpp",
         "variant": "cpp"
     }
+=======
+{
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "cmake.sourceDirectory": "C:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab1"
+>>>>>>> a91d72472274076d5440fa379d412a4950ece63a
 }
