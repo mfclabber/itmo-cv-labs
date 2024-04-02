@@ -272,6 +272,9 @@ int main(int argc, char** argv)
     cv::Mat I2 = image.clone();
     I2.setTo(0, Mask1 != 0);
 
+    cv::imwrite(path + "/outputs/I.png",I2);
+    cv::imshow("image", I2);
+
     cv::Mat E2, Eim2;
 
     entropy(I2, E2, el);;
@@ -305,6 +308,11 @@ int main(int argc, char** argv)
     segmentResults2.setTo(255, boundary2 != 0);
     cv::imwrite(path + "/outputs/image_segmentResults2_segmentation.png", segmentResults2);
 
-    cv::imshow("image", segmentResults);
+    I2 = image.clone();
+    I2.setTo(0, Mask2 != 0);
+
+    cv::imwrite(path + "/outputs/I2.png",I2);
+    cv::imshow("image", I2);
+
     cv::waitKey();
 }
