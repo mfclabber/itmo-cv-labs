@@ -20,7 +20,7 @@ func canny_hough_tranform(cv::Mat& image){
     cv::Canny(image, image_new, 50, 200);
     std::vector<cv::Vec4i> linesP;
 
-    HoughLinesP(image_new, linesP, 1, CV_PI / 180, 50, 50, 15);
+    HoughLinesP(image_new, linesP, 1, CV_PI / 150, 80, 40, 4);
 
     for (int i = 0; i < linesP.size(); ++i){
         cv::Vec4i I = linesP[i];
@@ -87,13 +87,14 @@ int main(int argc, char** argv)
     std::string path = "/home/mfclabber/itmo-cv-labs/lab5"; 
 
 
+
     // HOUGH TRANSFORM FOR LINES
     // IMAGE 1
 
     // GRAYSCALE
 
     // cv::Mat image;
-    // image = cv::imread(path + "/source/1.png", 1);
+    // image = cv::imread(path + "/source/test.png", 1);
 
     // func output = ordinary_hough_tranform(image);
 
@@ -106,14 +107,14 @@ int main(int argc, char** argv)
     // cv::imshow("image", output.image);
     // cv::waitKey();
 
-    // MAX LENGTH = 787
-    // MIN LENGTH = 51
-    // NUMBER OF LINES = 73
+    // MAX LENGTH = 1279
+    // MIN LENGTH = 50
+    // NUMBER OF LINES = 2946
 
     // CANNY
 
     // cv::Mat image;
-    // image = cv::imread(path + "/source/1.png", 1);
+    // image = cv::imread(path + "/source/test.png", 1);
 
     // func output = canny_hough_tranform(image);
 
@@ -126,9 +127,9 @@ int main(int argc, char** argv)
     // cv::imshow("image", output.image);
     // cv::waitKey();
 
-    // MAX LENGTH = 427
-    // MIN LENGTH = 50
-    // NUMBER OF LINES = 183
+    // MAX LENGTH = 329
+    // MIN LENGTH = 40
+    // NUMBER OF LINES = 314
 
 
 
@@ -217,4 +218,306 @@ int main(int argc, char** argv)
     // MAX LENGTH = 469
     // MIN LENGTH = 52
     // NUMBER OF LINES = 52
+
+
+
+
+    // HOUGH TRANSFORM FOR LINES
+
+    // IMAGE 1
+
+    // cv::Mat image, gray;
+    // image = cv::imread(path + "/source/6.png", 1);
+
+    // GRAYSCALE
+
+    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    // cv::medianBlur(gray, gray, 5);
+
+    // std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 50, 55 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image6_ordinary_r50.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 50, 65 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image6_ordinary_r5065.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // CANNY
+
+    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    // cv::Canny(gray, gray, 50, 200);
+
+    // std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 50, 55 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image6_canny_r50.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 50, 65 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image6_canny_r5065.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+
+    // IMAGE 2
+
+    cv::Mat image, gray;
+    image = cv::imread(path + "/source/7.png", 1);
+
+    // // GRAYSCALE
+
+    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    // cv::medianBlur(gray, gray, 5);
+
+    // std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 20, 25 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image7_ordinary_r25.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 20, 30 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image7_ordinary_r2030.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // CANNY
+
+    cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    cv::Canny(gray, gray, 50, 200);
+
+    std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 20, 35 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image7_canny_r35.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    gray.rows/16, // change this value to detect circles with different distances to each other
+    100, 30, 18, 35 // change the last two parameters
+    // (min_radius & max_radius) to detect larger circles
+    );
+    for( size_t i = 0; i < circles.size(); i++ )
+    {
+        cv::Vec3i c = circles[i];
+        cv::Point center = cv::Point(c[0], c[1]);
+        // circle center
+        cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+        // circle outline
+        int radius = c[2];
+        cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    }
+    cv::imwrite(path + "/outputs/image7_canny_r3045.png", image);
+    cv::imshow("detected circles", image);
+    cv::waitKey();
+
+
+    // IMAGE 3
+
+    // cv::Mat image, gray;
+    // image = cv::imread(path + "/source/8.png", 1);
+
+    // // GRAYSCALE
+
+    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    // cv::medianBlur(gray, gray, 5);
+
+    // std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 95, 100 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image8_ordinary_r100.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 80, 100 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image8_ordinary_r80100.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // CANNY
+
+    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+    // cv::Canny(gray, gray, 50, 200);
+
+    // std::vector<cv::Vec3f> circles;
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/16, // change this value to detect circles with different distances to each other
+    // 100, 30, 95, 105 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image8_canny_r100.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
+
+
+    // cv::HoughCircles(gray, circles, cv::HOUGH_GRADIENT, 1,
+    // gray.rows/ 3, // change this value to detect circles with different distances to each other
+    // 100, 30, 80, 120 // change the last two parameters
+    // // (min_radius & max_radius) to detect larger circles
+    // );
+    // for( size_t i = 0; i < circles.size(); i++ )
+    // {
+    //     cv::Vec3i c = circles[i];
+    //     cv::Point center = cv::Point(c[0], c[1]);
+    //     // circle center
+    //     cv::circle(image, center, 1, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    //     // circle outline
+    //     int radius = c[2];
+    //     cv::circle(image, center, radius, cv::Scalar(255,0,0), 3, cv::LINE_AA);
+    // }
+    // cv::imwrite(path + "/outputs/image8_canny_r80110.png", image);
+    // cv::imshow("detected circles", image);
+    // cv::waitKey();
 }
