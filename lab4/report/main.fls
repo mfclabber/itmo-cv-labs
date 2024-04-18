@@ -330,6 +330,16 @@ INPUT ../outputs/image_imclose_segmentation.png
 INPUT ../outputs/image_imclose_segmentation.png
 INPUT ../outputs/image_imclose_segmentation.png
 INPUT ../outputs/image_imclose_segmentation.png
+INPUT ../outputs/I.png
+INPUT ../outputs/I.png
+INPUT ../outputs/I.png
+INPUT ../outputs/I.png
+INPUT ../outputs/I.png
+INPUT ../outputs/I2.png
+INPUT ../outputs/I2.png
+INPUT ../outputs/I2.png
+INPUT ../outputs/I2.png
+INPUT ../outputs/I2.png
 INPUT ../outputs/image_countours_segmentation.png
 INPUT ../outputs/image_countours_segmentation.png
 INPUT ../outputs/image_countours_segmentation.png

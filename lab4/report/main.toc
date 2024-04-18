@@ -6,5 +6,5 @@
 \contentsline {subsection}{\numberline {2.1.}На основе принципа Вебера}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2.}Сегментация изображения в пространстве CIE Lab по методу k-средних}{9}{subsection.2.2}%
 \contentsline {section}{\numberline {3.}Текстурная сегментация}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1.}Оценка параметров текстур}{16}{subsection.3.1}%
-\contentsline {section}{\numberline {4.}Ответы на вопросы}{16}{section.4}%
+\contentsline {subsection}{\numberline {3.1.}Оценка параметров текстур}{17}{subsection.3.1}%
+\contentsline {section}{\numberline {4.}Ответы на вопросы}{17}{section.4}%

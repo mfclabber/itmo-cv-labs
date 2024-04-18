@@ -1,0 +1,25 @@
+# import requests
+
+# # Логин пользователя
+# username = "itmo"
+
+# # URL эндпоинта для получения информации о пользователе
+# url = f"https://api.github.com/users/{username}"
+
+# # Выполняем GET-запрос к API GitHub
+# response = requests.get(url)
+
+# # Проверяем успешность запроса
+# if response.status_code == 200:
+#     # Извлекаем дату регистрации пользователя из ответа
+#     user_data = response.json()
+#     registration_date = user_data['created_at']
+#     # Получаем только год регистрации
+#     registration_year = registration_date.split('-')[0]
+#     print(f"Пользователь {username} был зарегистрирован в {registration_year} году.")
+# else:
+#     print(f"Ошибка при выполнении запроса: {response.status_code}")
+
+import numpy as np
+x = [22, 86, 78, 32, 54, 50, 68, 80, 12, 18]
+print([round(1-np.exp(1-i/min(x)), 3) for i in x])

@@ -1,0 +1,5 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1.}Базовые морфологические операции}{2}{section.1}%
+\contentsline {section}{\numberline {2.}Разделение объектов}{9}{section.2}%
+\contentsline {section}{\numberline {3.}Сегментация изображения по водоразделам}{14}{section.3}%
+\contentsline {section}{\numberline {4.}Ответы на вопросы}{21}{section.4}%

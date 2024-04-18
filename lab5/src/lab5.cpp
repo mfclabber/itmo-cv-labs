@@ -91,7 +91,7 @@ int main(int argc, char** argv)
     // HOUGH TRANSFORM FOR LINES
     // IMAGE 1
 
-    // GRAYSCALE
+    // // GRAYSCALE
 
     // cv::Mat image;
     // image = cv::imread(path + "/source/test.png", 1);
@@ -111,7 +111,7 @@ int main(int argc, char** argv)
     // MIN LENGTH = 50
     // NUMBER OF LINES = 2946
 
-    // CANNY
+    // // CANNY
 
     // cv::Mat image;
     // image = cv::imread(path + "/source/test.png", 1);
@@ -227,11 +227,7 @@ int main(int argc, char** argv)
     // IMAGE 1
 
     // cv::Mat image, gray;
-    // image = cv::imread(path + "/source/6.png", 1);
-
-    // GRAYSCALE
-
-    // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
+      // cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
     // cv::medianBlur(gray, gray, 5);
 
     // std::vector<cv::Vec3f> circles;
@@ -320,7 +316,11 @@ int main(int argc, char** argv)
     // }
     // cv::imwrite(path + "/outputs/image6_canny_r5065.png", image);
     // cv::imshow("detected circles", image);
-    // cv::waitKey();
+    // cv::waitKey();// image = cv::imread(path + "/source/6.png", 1);
+
+    // GRAYSCALE
+
+  
 
 
 

@@ -147,11 +147,11 @@ image_new = image.clone();
 
 for(int i = 0; i < image_new.rows; ++i){
     for(int j = 0; j < image_new.cols; ++j){
-        if(image_new.at<uchar>(i, j) <= 88)
-            image_new.at<uchar>(i, j) = 20 - 12 * image_new.at<uchar>(i, j) / 88;   
+        if(image_new.at<uchar>(i, j) <= 125)
+            image_new.at<uchar>(i, j) = 50 - 12 * image_new.at<uchar>(i, j) / 88;   
         
-        else if(image_new.at<uchar>(i, j) <= 138)
-            image_new.at<uchar>(i, j) = 0.002 * cv::pow(image_new.at<uchar>(i, j) - 88, 2); 
+        else if(image_new.at<uchar>(i, j) <= 175)
+            image_new.at<uchar>(i, j) = 0.001 * cv::pow(image_new.at<uchar>(i, j) - 88, 2); 
         
         else if(image_new.at<uchar>(i, j) <= 255)
             image_new.at<uchar>(i, j) = 7 * (image_new.at<uchar>(i, j) - 138) / 117; 
@@ -297,13 +297,13 @@ cv::Mat I2 = image.clone();
 I2.setTo(0, Mask1 != 0);
 \end{lstlisting}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \includegraphics[width=\textwidth]{../outputs/image_entropy_segmentation.png}
     \caption{Бинаризованное изображение}
     \label{fig:р}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering 
 \includegraphics[width=\textwidth]{../outputs/image_bwareoopen_segmentation.png}
 \caption{Результат выполнения функции bwareaopen()}
@@ -312,9 +312,21 @@ I2.setTo(0, Mask1 != 0);
 
 \pagebreak
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \includegraphics[width=\textwidth]{../outputs/image_imclose_segmentation.png}
     \caption{Результат выполнения функции imclose()}
+    \label{fig:р}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{../outputs/I.png}
+    \caption{Результат сегментации воды}
+    \label{fig:р}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{../outputs/I2.png}
+    \caption{Результат сегментации суши}
     \label{fig:р}
 \end{figure}
 

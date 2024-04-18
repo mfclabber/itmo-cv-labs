@@ -1,5 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1712003957.39356 "c:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab4/report/main.tex" "main.pdf" "main" 1712003959.81518 0
+["pdflatex"] 1713343938.92621 "c:/Users/Dmitriy Novichkov/Desktop/Computer Vision Labs/lab4/report/main.tex" "main.pdf" "main" 1713343941.80502 0
+  "../outputs/I.png" 1712043668 18468 643ddb67e9d868878fc008fb76e27139 ""
+  "../outputs/I2.png" 1712043668 88193 a699b5009184f40b6f480728f544169c ""
   "../outputs/image_CIELab_segmentation.png" 1711983960 627201 8815f96a5feb665cec8d8bf2a04dbcbb ""
   "../outputs/image_adaptive_binarization.png" 1711983960 134666 80fd61b0fa9d973b6e23086aa4d8f7e4 ""
   "../outputs/image_binarization.png" 1711983960 21214 b30ef575e79d51b6187b40ec698b2964 ""
@@ -11,7 +13,7 @@
   "../outputs/image_imclose_segmentation.png" 1711983960 1409 7752c9e91e461d1eff9f3cf2266f5054 ""
   "../outputs/image_otsu_binarization.png" 1711983960 23786 000cf1f892e045a61ef5ad8977912833 ""
   "../outputs/image_road_segmentation.png" 1711983960 25850 f1fc3f4630ee66e9eaaac45cb6e6ce01 ""
-  "../outputs/image_veber_segmentation.png" 1711983960 381051 a40a58933a378ed255f1b87285a6baa4 ""
+  "../outputs/image_veber_segmentation.png" 1713343873 298929 cf3d29f7bfb1a6e35b8fa7cacb99d388 ""
   "../source/face.png" 1711983960 194196 b796c555c21c3a20d529dd50d18e7e1f ""
   "../source/road.png" 1711983960 838254 8ddb6f5c5f584973aa7021779fc52704 ""
   "../source/sea.png" 1711983960 39330 928e9dff08db53bbebb49f99b6e8fb2c ""
@@ -144,14 +146,14 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709805126 123480 825a954d3b18dcd8929c53145c8c721a ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709769439 6812425 fcc01dddfdaf5bee67974ef904791b52 ""
   "c:/texlive/2023/texmf.cnf" 1709769390 713 e69b156964470283e0530f5060668171 ""
-  "content.aux" 1712003959 8839 0a70b5ea65c87f120e6a067a7cb49522 "pdflatex"
-  "content.tex" 1712003956 19571 85419624a2d24bb0516c5e2c4e7b13ea ""
-  "main.aux" 1712003959 312 cb0054ba89e0b0c1941647b201f9cafd "pdflatex"
-  "main.out" 1712003959 2353 a95b2adf43773ee92e3260e9a3931a54 "pdflatex"
+  "content.aux" 1713343941 9353 6fffa8dcb50ac8d04dfde739312d1a10 "pdflatex"
+  "content.tex" 1713343937 19916 23b5b4a4705ea89757a2153c9359f7e3 ""
+  "main.aux" 1713343941 312 5c6ece26cb97e93bd2d1f56ed74bcdcd "pdflatex"
+  "main.out" 1713343941 2353 a95b2adf43773ee92e3260e9a3931a54 "pdflatex"
   "main.tex" 1712001872 4046 a355a7cd537e9c9c98de71dfbb0b53af ""
-  "main.toc" 1712003959 1046 152d9ee63edead44c7a6a04d89d01ed2 "pdflatex"
+  "main.toc" 1713343941 1046 51a8dd735bc868c6431af3cc6bc54fcc "pdflatex"
   "media/ITMO_logo.png" 1710453878 13873 06bd6ab077b24bd26b1aacd5f3184ad7 ""
-  "unformal_title.aux" 1712003958 693 6a1e8e401b41aef68f81675939e68835 "pdflatex"
+  "unformal_title.aux" 1713343940 693 6a1e8e401b41aef68f81675939e68835 "pdflatex"
   "unformal_title.tex" 1710462659 845 e6fa839b7278a8218cc8112ad63ac723 ""
   (generated)
   "content.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.7)  1 APR 2024 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.7)  17 APR 2024 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,6 +743,12 @@ LaTeX Warning: Label `fig:р' multiply defined.
 
 LaTeX Warning: Label `fig:р' multiply defined.
 
+
+LaTeX Warning: Label `fig:р' multiply defined.
+
+
+LaTeX Warning: Label `fig:р' multiply defined.
+
 ))
 \openout1 = `main.aux'.
 
@@ -995,65 +1001,72 @@ File: ../outputs/image_entropy_segmentation.png Graphic file (type png)
 <use ../outputs/image_entropy_segmentation.png>
 Package pdftex.def Info: ../outputs/image_entropy_segmentation.png  used on input line 301.
 (pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../outputs/image_bwareoopen_segmentation.png, id=243, 602.25pt x 335.2525pt>
+ [13]
+<../outputs/image_bwareoopen_segmentation.png, id=287, 602.25pt x 335.2525pt>
 File: ../outputs/image_bwareoopen_segmentation.png Graphic file (type png)
 <use ../outputs/image_bwareoopen_segmentation.png>
 Package pdftex.def Info: ../outputs/image_bwareoopen_segmentation.png  used on input line 308.
 (pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13]
-<../outputs/image_imclose_segmentation.png, id=288, 602.25pt x 335.2525pt>
-File: ../outputs/image_imclose_segmentation.png Graphic file (type png)
-<use ../outputs/image_imclose_segmentation.png>
-Package pdftex.def Info: ../outputs/image_imclose_segmentation.png  used on input line 316.
-(pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../outputs/image_countours_segmentation.png, id=289, 602.25pt x 335.2525pt>
-File: ../outputs/image_countours_segmentation.png Graphic file (type png)
-<use ../outputs/image_countours_segmentation.png>
-Package pdftex.def Info: ../outputs/image_countours_segmentation.png  used on input line 323.
-(pdftex.def)             Requested size: 300.46416pt x 167.26263pt.
-<../outputs/image_countours2_segmentation.png, id=290, 602.25pt x 335.2525pt>
-File: ../outputs/image_countours2_segmentation.png Graphic file (type png)
-<use ../outputs/image_countours2_segmentation.png>
-Package pdftex.def Info: ../outputs/image_countours2_segmentation.png  used on input line 324.
-(pdftex.def)             Requested size: 300.46416pt x 167.26263pt.
-[14
+ [14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.339 
+l.314 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.339 
+l.314 
        <../outputs/image_entropy_segmentation.png (PNG copy)> <../outputs/image_bwareoopen_segmentation.png (PNG copy)>]
-
-LaTeX Warning: Text page 15 contains only floats.
-
-[15
+<../outputs/image_imclose_segmentation.png, id=294, 602.25pt x 335.2525pt>
+File: ../outputs/image_imclose_segmentation.png Graphic file (type png)
+<use ../outputs/image_imclose_segmentation.png>
+Package pdftex.def Info: ../outputs/image_imclose_segmentation.png  used on input line 316.
+(pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
+<../outputs/I.png, id=295, 602.25pt x 335.2525pt>
+File: ../outputs/I.png Graphic file (type png)
+<use ../outputs/I.png>
+Package pdftex.def Info: ../outputs/I.png  used on input line 322.
+(pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
+<../outputs/I2.png, id=296, 602.25pt x 335.2525pt>
+File: ../outputs/I2.png Graphic file (type png)
+<use ../outputs/I2.png>
+Package pdftex.def Info: ../outputs/I2.png  used on input line 328.
+(pdftex.def)             Requested size: 500.76852pt x 278.77106pt.
+ [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.339 
+l.332 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.339 
-       <../outputs/image_imclose_segmentation.png (PNG copy)> <../outputs/image_countours_segmentation.png (PNG copy)> <../outputs/image_countours2_segmentation.png (PNG copy)>]
+l.332 
+       <../outputs/image_imclose_segmentation.png (PNG copy)> <../outputs/I.png (PNG copy)>]
+<../outputs/image_countours_segmentation.png, id=303, 602.25pt x 335.2525pt>
+File: ../outputs/image_countours_segmentation.png Graphic file (type png)
+<use ../outputs/image_countours_segmentation.png>
+Package pdftex.def Info: ../outputs/image_countours_segmentation.png  used on input line 335.
+(pdftex.def)             Requested size: 300.46416pt x 167.26263pt.
+<../outputs/image_countours2_segmentation.png, id=304, 602.25pt x 335.2525pt>
+File: ../outputs/image_countours2_segmentation.png Graphic file (type png)
+<use ../outputs/image_countours2_segmentation.png>
+Package pdftex.def Info: ../outputs/image_countours2_segmentation.png  used on input line 336.
+(pdftex.def)             Requested size: 300.46416pt x 167.26263pt.
+ [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.342 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.342 
+       <../outputs/I2.png (PNG copy)> <../outputs/image_countours_segmentation.png (PNG copy)> <../outputs/image_countours2_segmentation.png (PNG copy)>]
 \c@question=\count309
- [16]) [17] (./main.aux (./unformal_title.aux) (./content.aux))
+ [17]) [18] (./main.aux (./unformal_title.aux) (./content.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1066,18 +1079,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A95B2ADF43773EE92E3260E9A3931A54;2353.
  ) 
 Here is how much of TeX's memory you used:
- 15215 strings out of 476076
- 232413 string characters out of 5793329
+ 15233 strings out of 476076
+ 232775 string characters out of 5793329
  2040190 words of memory out of 5000000
- 36905 multiletter control sequences out of 15000+600000
+ 36920 multiletter control sequences out of 15000+600000
  572288 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,7n,122p,991b,2143s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1095.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1200.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk> <c:/Users/Dmitriy Novichkov/.texlive2023/texmf-var/fonts/pk/ljfour/lh/lh-t2a/laxc1440.600pk><c:/texlive/2023/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (18 pages, 2729184 bytes).
+Output written on main.pdf (19 pages, 2754418 bytes).
 PDF statistics:
- 700 PDF objects out of 1000 (max. 8388607)
- 361 compressed objects within 4 object streams
- 187 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
