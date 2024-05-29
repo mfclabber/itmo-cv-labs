@@ -7,6 +7,9 @@
 <h3 align="center">
     <p>Laboratory works for Computer Vision in ITMO</p>
 </h3>
+
+---
+<br>
   
 ### Laboratory work 1. [Histograms, profiles, projections](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab1)
 
@@ -15,6 +18,8 @@
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab1/outputs/output13.png" />
 </p>
 
+<br>
+
 ### Laboratory work 2. [Geometric transformations](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab2)
 
 <p align="center">
@@ -22,12 +27,16 @@
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab2/outputs/image_stitch.png" />
 </p>
 
+<br>
+
 ### Laboratory work 3. [Filtering and highlighting contours](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab3)
 
 <p align="center">
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab3/outputs/image_mltp_noise.png" />
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab3/outputs/sobel_operator.png" />
 </p>
+
+<br>
 
 ### Laboratory work 4. [Image segmentation](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab4)
 
@@ -37,12 +46,16 @@
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab4/outputs/image_adaptive_binarization.png" />
 </p>
 
+<br>
+
 ### Laboratory work 5. [Hough Transform](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab5)
 
 <p align="center">
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab5/outputs/image1_canny.png" />
   <img src="https://github.com/mfclabber/itmo-cv-labs/blob/main/lab5/outputs/image7_canny_r3045.png" />
 </p>
+
+<br>
 
 ### Laboratory work 6. [Morphological operations](https://github.com/mfclabber/itmo-cv-labs/tree/main/lab5)
 
